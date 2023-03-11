@@ -34,7 +34,6 @@ h1{
     border-top: 2px solid #ccc;
 }
 .accordeon:hover{
-    color: #000;
     background: #f5f5eb;
     display: flex;
     flex-direction: column;
@@ -65,28 +64,19 @@ h1{
     align-items: center;
     background: #f5f5eb;
     justify-content: center;
+    transition: height 3s;
     
 }
 .visibleimg{
     transition: height 1s;
     width: 100%;
     background: #f5f5eb;
+    height: auto;
 }
 
-.hiddenimg{
-    width: 100%;
-    transition: height 1s;
-    background: #f5f5eb;
-}
-.visible{
-    display: flex;
-}
-.hidden{
-    display: none; 
-}
+
 .accordeon-item__img>img{
     width: 80%;
-    height: 100%;
     border-radius: 20px;
 }
 
