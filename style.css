@@ -84,11 +84,12 @@ h1{
     width: 100%;
     height: 50%;
     background: #f5f5eb;
+    overflow: auto;
 }
 
 .hiddenimg{
     width: 100%;
-    height: 0vh;
+    height: auto;
     transition: height 1s;
     background: #f5f5eb;
     display: flex;
