@@ -98,7 +98,7 @@ h1{
     display: flex;
 }
 .hidden{
-    display: none;
+    display: none; 
 }
 .accordeon-item__img>img{
     width: 80%;

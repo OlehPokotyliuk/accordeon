@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const img = document.querySelectorAll('.accordeon-item__img');
 
 
-    img[0].classList.add('visibleimg');
+    img[0].classList.toggle('visibleimg');
 
     item.forEach((e, arr) => {
         e.addEventListener('mouseenter', (event) => {
