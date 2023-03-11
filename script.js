@@ -9,21 +9,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+
     item.forEach((e, arr) => {
         e.addEventListener('mouseenter', (event) => {
             img[arr].classList.toggle('visibleimg');
-
-            link.forEach(event => {
-                event.classList.toggle('visible');
-                event.innerHTML = '+';
-            })
-
         });
+
         e.addEventListener('mouseleave', (event) => {
             img[arr].classList.toggle('hiddenimg');
-            link.forEach(event => {
-                event.classList.toggle('hidden');
-            })
         });
     });
 
