@@ -68,12 +68,16 @@ h1{
     
 }
 .visibleimg{
+    display: flex;
     transition: height 1s;
     width: 100%;
     background: #f5f5eb;
     height: auto;
 }
 
+.visible{
+    display: none;
+}
 
 .accordeon-item__img>img{
     width: 80%;
