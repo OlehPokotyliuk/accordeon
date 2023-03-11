@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
-
-    const accordeon = document.querySelectorAll('.accordeon');
-    const allitems = document.querySelector('.allitems');
-    const link = document.querySelectorAll('.link');
     const item = document.querySelectorAll('.accordeon-item');
     const img = document.querySelectorAll('.accordeon-item__img');
 
@@ -12,15 +8,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     item.forEach((e, arr) => {
         e.addEventListener('mouseenter', (event) => {
-            img[arr].classList.toggle('visibleimg');
+            img[arr].classList.add('visibleimg');
+        });
+        e.addEventListener('mouseleave', (event) => {
+            img[arr].classList.remove('visibleimg');
         });
     });
 
-    item.forEach((e, arr) => {
-        e.addEventListener('mouseleave', (event) => {
-            img[arr].classList.toggle('hiddenimg');
-        });
-    });
 
 
 })

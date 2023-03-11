@@ -26,21 +26,12 @@ h1{
     border: 5px solid #67f754;
     border-radius: 20px;
 }
-.allitems{
-    width: 80%;
-    height: 200%;
-    flex-direction: column;
-    margin: 0 auto;
-    display: flex;
-    color: blue
-}
 
 .accordeon{
     width: 80%;
     flex-direction: column;
     margin: 0 auto;
     border-top: 2px solid #ccc;
-    height: auto;
 }
 .accordeon:hover{
     color: #000;
@@ -56,7 +47,6 @@ h1{
     display: flex;
     justify-content: space-between;
     background: #f5f5eb;
-    height: 15vh;
     align-items: center;
 }
 
@@ -71,7 +61,6 @@ h1{
 .accordeon-item__img{
     display: flex;
     width: 0;
-    height: auto;
     flex-direction: row;
     align-items: center;
     background: #f5f5eb;
@@ -79,20 +68,15 @@ h1{
     
 }
 .visibleimg{
-    display: flex;
     transition: height 1s;
     width: 100%;
-    height: 50%;
     background: #f5f5eb;
-    overflow: auto;
 }
 
 .hiddenimg{
     width: 100%;
-    height: auto;
     transition: height 1s;
     background: #f5f5eb;
-    display: flex;
 }
 .visible{
     display: flex;
